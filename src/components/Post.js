@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import Hok from '.././hok';
 import './Post.css'
 
 const Post = (props) => (
