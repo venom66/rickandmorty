@@ -5,7 +5,7 @@ const Post = (props) => (
     <div className="Post">
       <div className="left">
           <h1>{props.name}</h1>
-          <img src={props.img}></img>
+          <img alt="" src={props.img}></img>
         </div>
         <div className="right">
             <p>status: <strong>{props.alive} </strong> </p>

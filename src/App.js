@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Post from './components/Post';
-import Input from './components/Input';
 import './App.css';
 
 class App extends Component {
@@ -20,11 +19,6 @@ class App extends Component {
       timeout: 2000,
     });
     
-    // axios.get('https://rickandmortyapi.com/api/character/', {
-    //   params: {
-    //     name: this.state.input
-    //   }
-    // })
     instance.get('', {
       params: {
         name: this.state.input
@@ -34,14 +28,11 @@ class App extends Component {
         let resp = responce.data.results;
         let respVal = Object.values(resp)
         this.setState({posts: respVal});
-        // console.log(this.state.posts);
       })
       .catch(function (error) {
-        // handle error
         console.log(error);
       })
       .then(function () {
-        // always executed
       })
   }
 
