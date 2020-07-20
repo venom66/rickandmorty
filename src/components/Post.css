@@ -1,0 +1,33 @@
+.Post{
+    background-origin: padding-box;
+    margin: 10px;
+    padding: 5px;
+    border: hotpink 3px solid;
+    display: flex;
+    width: 700px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    background-color: khaki;
+    
+}
+
+.right{
+    float: left;
+    width: 300px;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 2%;
+    height: 290px;
+    margin-top: 35px;
+    padding-top: 1%;
+
+}
+
+.left{
+    width: auto;
+    float: left;
+    height: 400px;
+}

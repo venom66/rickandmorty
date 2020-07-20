@@ -1,31 +1,26 @@
+body{
+  background-color: grey;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: grey;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchInput{
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #5f7277;
+  color:white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+#search{
+  background-color: #61dafb;
 }
 
 @keyframes App-logo-spin {

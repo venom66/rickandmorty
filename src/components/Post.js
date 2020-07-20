@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Hok from '.././hok';
+import './Post.css'
 
 const Post = (props) => (
     <div className="Post">
-        <h1>{props.name}</h1>
-      <div className="info">
-      </div>
-    </div>
+      <div className="left">
+          <h1>{props.name}</h1>
+          <img src={props.img}></img>
+        </div>
+        <div className="right">
+            <p>status: <strong>{props.alive} </strong> </p>
+            <p>species: {props.spec}</p>
+            <p>location: {props.loc}</p>
+            <p>nubers of episodes: {props.epi}</p>
+            <p>created: {props.created} </p>
+            <p>nr of episodes: {props.number[0]}</p>
+        </div>
+     </div>
   );
 
 export default Post;
